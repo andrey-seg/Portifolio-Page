@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-001: #00346B;
+  --color-002: #002C5C;
+  --color-003: #00264F;
+  --color-004: #001933;
+  --color-005: #001021;
+  --color-006: #2a2c32;
+  --color=007: ;
+  --customFont: 'font-001', monospace;
+}
+
+@font-face {
+  font-family: 'font-001';
+  src: url(fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.woff2) format('woff2'),
+       url(fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.woff) format('woff'),
+       url(fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#headerEsquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 5%;
+}
+
+#portifolioLogo {
+  margin-left: 1%;
+  font-size: 3rem;
+}
+
+.pixelFont {
+  font-family: var(--customFont);
+}
+
+.blueBox {
+    background-color: var(--color-001);
+    background-image: url(Textures/3px-tile.png);
+    background-size: 30px 30px; 
+    background-repeat: repeat; 
+    padding: 30px;
+    border-radius: 5px;
+    width: 30rem;
+    height: fit-content;
+    border: 2px solid #afd6ff;
+}
+
+.blueBox h3 {
+  font-size: 1.5rem;
+  font-family: var(--customFont);
+  color: #afd6ff;
+}
+
+.boxScroll {
+  background-color: var(--color-006);
+  width: 60rem;
+  height: 12rem;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-right: 5%;
+  border: 2px solid var(--color-003);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mainBoxes-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.mainBoxes{
+  
+}
+
+footer {
+  position: fixed;
+  bottom: 1%;
+  left: 50%;                        
+  transform: translateX(-50%);      
+  width: 90%;
+  height: 50px;
+  background: var(--color-006);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
